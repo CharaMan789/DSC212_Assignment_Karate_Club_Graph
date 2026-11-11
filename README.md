@@ -22,6 +22,6 @@ Open `DSC212_Modularity.ipynb`, then choose **Kernel → Restart Kernel and Run 
 
 The notebook constructs the unweighted Karate Club adjacency matrix explicitly (`weight=None`), performs recursive spectral partitioning, calculates metrics within each current community, and displays the visualisations inline.
 
-**Course**: DSC212 - Graph Theory
-**Institution**: IISER Thiruvananthapuram
-**Author**: Sricharan Pisupati
+**Course**: DSC212 - Graph Theory.
+**Institution**: IISER Thiruvananthapuram.
+**Author**: Sricharan Pisupati.
