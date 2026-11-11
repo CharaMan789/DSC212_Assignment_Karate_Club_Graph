@@ -1,26 +1,7 @@
 # DSC212 — Modularity on the Karate Club Graph
 
-## Files
-- `DSC212_Modularity.ipynb`: self-contained notebook with code, inline outputs, visualisations, and discussion prompts.
-- `requirements.txt`: Python dependencies.
-- `DSC212_output/`: exported community diagrams, metric evolution plots, and metric history CSV.
-
-## Run
-Install dependencies:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-Start Jupyter:
-
-```bash
-jupyter notebook
-```
-
-Open `DSC212_Modularity.ipynb`, then choose **Kernel → Restart Kernel and Run All Cells**.
-
-The notebook constructs the unweighted Karate Club adjacency matrix explicitly (`weight=None`), performs recursive spectral partitioning, calculates metrics within each current community, and displays the visualisations inline.
+Summary of the assignment:
+This assignment is about using a quantity called modularity, and this is to analyze which groups of people are more strongly connected than the rest. We analyse the Karate Club graph in the assignment here. Briefly, the procedure we follow - is to consider the adjacency matrix of the graph, and then subtract from it the matrix of expectances of edges of the graph, i.e a random graph with the degree of every node being preserved. Then we analyse the quantity modularity derived from this matrix obtained and our goal is to maximise this modularity. Upon optimizing for it, and relaxing the conditions surrounding the community assignment vector we obtain the eigenvalue equation, from which we obtain the eigenvalues. Then we consider the leading eigen-pair, i.e eigen-value and eigen-vector. If the leading eigenvalue is greater than 0, then splitting the community further (bipartition) increases modularity. Else, there is no improvement in modularity, and hence we must stop the partition. 
 
 **Course**: DSC212 - Graph Theory.
 **Institution**: IISER Thiruvananthapuram.
